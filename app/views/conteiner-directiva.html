@@ -1,0 +1,11 @@
+<div>
+    <div ng-bind="vm.title"></div>
+    <ol ng-repeat="user in vm.users">
+        <li>
+            <div class="form-group" edit-directive us='user'>
+                {{user.name}}
+            </div>
+        </li>
+    </ol>
+    <div ng-transclude></div>
+</div>

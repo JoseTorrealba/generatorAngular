@@ -1,0 +1,10 @@
+<div>
+    <div class="form-inline" ng-class="vm.viewClass()">
+        <div class="form-group" ng-transclude></div>
+        <Button ng-click="vm.toggle()">Editar</Button>
+    </div>
+    <div ng-class=" { 'hide': !vm.edit }">
+        <input ng-model="vm.user.name" type="text">
+        <button ng-click="vm.toggle()">Editar</button>
+    </div>
+</div>
